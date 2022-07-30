@@ -2,9 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
+:root{
+    --primary-color: black; 
+}
+
 
 *{
     box-sizing: border-box;
+    font-size: 24px;
 }
 
 body{
@@ -12,13 +17,62 @@ body{
     margin: 0;
 }
 
-nav h1{
-    font-family: 'Kaushan Script', cursive;
-    font-size: 2rem;
-    margin: 0 auto;
-    width: max-content;
+.nav{
+    background-color: black;
 }
 
-p{
-    font-size: 1.5rem;
+nav .title{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 0.7rem;
+    width: max-content;
+    color: bisque;
+}
+
+.txt-area{
+    display: block;
+    width: 40%;
+    height: 20vh;
+    padding: 0.7rem;
+    resize: none;
+    font-family: 'Caveat', cursive;
+    margin: 1rem auto;
+}
+
+.btn{
+    display: block;
+    width: max-content;
+    margin: 1rem auto;
+    padding: 0.7rem;
+    font-family: 'Caveat', cursive;
+    cursor: pointer;
+    color: beige;
+    background-color: black;
+}
+
+.txt-output{
+    width: max-content;
+    margin: auto;
+}
+
+.output{
+    width: 40%;
+    height: 20vh;
+    border: 1px solid black;
+    margin: 0.7rem auto;
+}
+
+.footer-txt{
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: justify;
+    text-align-last: center;
+    font-size: 1.05rem;
+    padding: 0.7rem;
+    color: beige;
+}
+
+.footer{
+    background-color: black;
 }
