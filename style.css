@@ -4,6 +4,8 @@
 
 :root{
     --primary-color: black; 
+    --title-color: bisque;
+    --text-color: beige;
 }
 
 
@@ -18,7 +20,28 @@ body{
 }
 
 .nav{
-    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 0.75fr 1fr;
+    background-color: var(--primary-color);
+}
+
+.nav .img-1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1rem;
+}
+
+.nav .img-2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 1rem;
+}
+
+.nav .img-ship{
+    width: 3rem;
+    height: 3rem;
 }
 
 nav .title{
@@ -27,7 +50,7 @@ nav .title{
     margin: 0 auto;
     padding: 0.7rem;
     width: max-content;
-    color: bisque;
+    color: var(--title-color);
 }
 
 .txt-area{
@@ -47,8 +70,8 @@ nav .title{
     padding: 0.7rem;
     font-family: 'Caveat', cursive;
     cursor: pointer;
-    color: beige;
-    background-color: black;
+    color: var(--text-color);
+    background-color: var(--primary-color);
 }
 
 .txt-output{
@@ -59,7 +82,7 @@ nav .title{
 .output{
     width: 40%;
     height: 20vh;
-    border: 1px solid black;
+    border: 1px solid var(--primary-color);
     margin: 0.7rem auto;
 }
 
@@ -70,9 +93,9 @@ nav .title{
     text-align-last: center;
     font-size: 1.05rem;
     padding: 0.7rem;
-    color: beige;
+    color: var(--text-color);
 }
 
 .footer{
-    background-color: black;
+    background-color: var(--primary-color);
 }
