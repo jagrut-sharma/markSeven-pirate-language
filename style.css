@@ -19,6 +19,8 @@ body{
     margin: 0;
 }
 
+/* Navigation Start */
+
 .nav{
     display: grid;
     grid-template-columns: 1fr 0.75fr 1fr;
@@ -53,14 +55,44 @@ nav .title{
     color: var(--title-color);
 }
 
+/* Navigation Ends */
+
+/* Content */
+
+.container{
+    display: grid;
+    grid-template-columns: 1.5fr 3fr 1.5fr;
+    gap: 0.7rem;
+}
+
+.side-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-wrapper-img-skull{
+    width: 100%;
+    height: 80%;
+    padding: 1rem;
+    margin-right: 2rem;
+}
+
+.side-wrapper-img-ship{
+    width: 100%;
+    height: 90%;
+    padding: 1rem;
+}
+
+
 .txt-area{
     display: block;
-    width: 40%;
-    height: 20vh;
+    width: 70%;
+    min-height: 20vh;
     padding: 0.7rem;
     resize: none;
     font-family: 'Caveat', cursive;
-    margin: 1rem auto;
+    margin: 3rem auto 0.7rem;
 }
 
 .btn{
@@ -72,16 +104,17 @@ nav .title{
     cursor: pointer;
     color: var(--text-color);
     background-color: var(--primary-color);
+    align-self: center;
 }
 
 .txt-output{
-    width: max-content;
-    margin: auto;
+    text-align: center;
+    margin: 0.7rem auto;
 }
 
 .output{
-    width: 40%;
-    height: 20vh;
+    width: 70%;
+    min-height: 20vh;
     border: 1px solid var(--primary-color);
     margin: 0.7rem auto;
 }
@@ -92,10 +125,41 @@ nav .title{
     text-align: justify;
     text-align-last: center;
     font-size: 1.05rem;
-    padding: 0.7rem;
+    padding: 1rem;
     color: var(--text-color);
 }
 
 .footer{
     background-color: var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 800px) {
+
+    .container{
+        all: unset;
+    }
+
+    .background{
+        display: block;
+        background-image: url(./images/imageedit_3_3293361583.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: +2;
+    }
+
+    .container .side-wrapper{
+        all: unset;
+        display: none;
+    }
+
+    
+
+    .footer{
+        all: unset;
+    } 
+
 }
