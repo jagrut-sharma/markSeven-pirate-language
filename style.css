@@ -2,51 +2,51 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
-:root{
-    --primary-color: black; 
+:root {
+    --primary-color: black;
     --title-color: bisque;
     --text-color: beige;
 }
 
 
-*{
+* {
     box-sizing: border-box;
     font-size: 24px;
 }
 
-body{
+body {
     font-family: 'Caveat', cursive;
     margin: 0;
 }
 
 /* Navigation Start */
 
-.nav{
+.nav {
     display: grid;
     grid-template-columns: 1fr 0.75fr 1fr;
     background-color: var(--primary-color);
 }
 
-.nav .img-1{
+.nav .img-1 {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding: 0 1rem;
 }
 
-.nav .img-2{
+.nav .img-2 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 0 1rem;
 }
 
-.nav .img-ship{
+.nav .img-ship {
     width: 3rem;
     height: 3rem;
 }
 
-nav .title{
+nav .title {
     font-family: 'Kaushan Script', cursive;
     font-size: 1.2rem;
     margin: 0 auto;
@@ -59,33 +59,33 @@ nav .title{
 
 /* Content */
 
-.container{
+.container {
     display: grid;
     grid-template-columns: 1.5fr 3fr 1.5fr;
     gap: 0.7rem;
 }
 
-.side-wrapper{
+.side-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.side-wrapper-img-skull{
+.side-wrapper-img-skull {
     width: 100%;
     height: 80%;
     padding: 1rem;
     margin-right: 2rem;
 }
 
-.side-wrapper-img-ship{
+.side-wrapper-img-ship {
     width: 100%;
     height: 90%;
     padding: 1rem;
 }
 
 
-.txt-area{
+.txt-area {
     display: block;
     width: 70%;
     min-height: 20vh;
@@ -95,7 +95,7 @@ nav .title{
     margin: 3rem auto 0.7rem;
 }
 
-.btn{
+.btn {
     display: block;
     width: max-content;
     margin: 1rem auto;
@@ -107,19 +107,20 @@ nav .title{
     align-self: center;
 }
 
-.txt-output{
+.txt-output {
     text-align: center;
     margin: 0.7rem auto;
 }
 
-.output{
+.output {
     width: 70%;
     min-height: 20vh;
     border: 1px solid var(--primary-color);
     margin: 0.7rem auto;
+    overflow-y: scroll;
 }
 
-.footer-txt{
+.footer-txt {
     max-width: 50%;
     margin: 0 auto;
     text-align: justify;
@@ -129,7 +130,7 @@ nav .title{
     color: var(--text-color);
 }
 
-.footer{
+.footer {
     background-color: var(--primary-color);
     position: absolute;
     bottom: 0;
@@ -138,28 +139,28 @@ nav .title{
 }
 
 @media screen and (max-width: 800px) {
- 
-    body{
+
+    body {
         height: 100vh;
     }
-    
-    .nav{
+
+    .nav {
         grid-template-columns: repeat(3, 1fr);
     }
-    
-    .nav .img-1{
+
+    .nav .img-1 {
         padding: 0;
     }
 
-    .nav .img-2{
+    .nav .img-2 {
         padding: 0;
     }
-    
-    .container{
+
+    .container {
         all: unset;
     }
 
-    .background{
+    .background {
         display: block;
         background-image: url(./images/imageedit_3_3293361583.png);
         background-repeat: no-repeat;
@@ -167,55 +168,55 @@ nav .title{
         margin-top: 0.7rem;
     }
 
-    .container .side-wrapper{
+    .container .side-wrapper {
         all: unset;
         display: none;
     }
 
-    .txt-area{
+    .txt-area {
         margin: 2rem auto 0.7rem;
         background: transparent;
     }
 
-    .output{
+    .output {
         margin: 0.7rem auto 2rem;
     }
 
-    .footer{
+    .footer {
         background-color: var(--primary-color);
         position: fixed;
         height: auto;
         /* bottom: 0; */
-    } 
+    }
 
-    .footer-txt{
+    .footer-txt {
         max-width: 80%;
     }
 }
 
 @media screen and (max-width: 500px) {
- 
-    body{
+
+    body {
         height: 100vh;
     }
-    
-    .nav{
+
+    .nav {
         grid-template-columns: repeat(3, 1fr);
     }
-    
-    .nav .img-1{
+
+    .nav .img-1 {
         padding: 0;
     }
 
-    .nav .img-2{
+    .nav .img-2 {
         padding: 0;
     }
-    
-    .container{
+
+    .container {
         all: unset;
     }
 
-    .background{
+    .background {
         display: block;
         background-image: url(./images/imageedit_3_3293361583.png);
         background-repeat: no-repeat;
@@ -223,26 +224,26 @@ nav .title{
         margin-top: 0.7rem;
     }
 
-    .container .side-wrapper{
+    .container .side-wrapper {
         all: unset;
         display: none;
     }
 
-    .txt-area{
+    .txt-area {
         margin: 2rem auto 0.7rem;
         background: transparent;
     }
 
-    .output{
+    .output {
         margin: 0.7rem auto 2rem;
     }
 
-    .footer{
+    .footer {
         background-color: var(--primary-color);
         position: static;
-    } 
+    }
 
-    .footer-txt{
+    .footer-txt {
         max-width: 80%;
     }
 }
